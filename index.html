@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo de Débora Cristiane</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --light-color: #ecf0f1;
+            --dark-color: #34495e;
+            --text-color: #333;
+            --muted-color: #7f8c8d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #f5f7fa;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--light-color);
+        }
+
+        header h1 {
+            color: var(--secondary-color);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-info p {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: var(--muted-color);
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            margin: 25px 0 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--light-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2 i {
+            color: var(--primary-color);
+        }
+
+        .job, .degree {
+            margin-bottom: 25px;
+        }
+
+        h3 {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .period {
+            color: var(--muted-color);
+            font-style: italic;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .institution {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        ul {
+            list-style-position: inside;
+            margin-left: 10px;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid var(--light-color);
+            color: var(--muted-color);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Débora Cristiane</h1>
+            <p>Analista de Sistemas | Recepcionista</p>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> debora.cristiane@exemplo.com</p>
+                <p><i class="fas fa-phone"></i> (61) 99999-9999</p>
+                <p><i class="fas fa-map-marker-alt"></i> Brasília, DF</p>
+            </div>
+        </header>
+
+        <section class="about">
+            <h2><i class="fas fa-user"></i> Sobre</h2>
+            <p>Profissional com experiência multidisciplinar em atendimento ao público e formação em Análise e Desenvolvimento de Sistemas, buscando transição para área de TI.</p>
+        </section>
+
+        <section class="experience">
+            <h2><i class="fas fa-briefcase"></i> Experiência Profissional</h2>
+            
+            <div class="job">
+                <h3>Monitora</h3>
+                <p class="period">2025</p>
+                <ul>
+                    <li>Auxílio no desenvolvimento de atividades educacionais</li>
+                    <li>Suporte a alunos e professores</li>
+                </ul>
+            </div>
+            
+            <div class="job">
+                <h3>Recepcionista - Teresa Zanchi</h3>
+                <p class="period">2023-2025</p>
+                <ul>
+                    <li>Atendimento ao público</li>
+                    <li>Organização de agenda</li>
+                    <li>Recepcionar e direcionar visitantes</li>
+                </ul>
+            </div>
+            
+            <div class="job">
+                <h3>Copeira - Senado Federal</h3>
+                <p class="period">2023</p>
+                <ul>
+                    <li>Serviços de copa e cozinha</li>
+                    <li>Organização de ambientes</li>
+                    <li>Apoio em eventos institucionais</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="education">
+            <h2><i class="fas fa-graduation-cap"></i> Formação Acadêmica</h2>
+            <div class="degree">
+                <h3>Análise e Desenvolvimento de Sistemas</h3>
+                <p class="institution">UDF - Centro Universitário</p>
+                <p class="period">Concluído em 2024</p>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2><i class="fas fa-code"></i> Habilidades Técnicas</h2>
+            <ul>
+                <li>HTML5, CSS3</li>
+                <li>JavaScript básico</li>
+                <li>Git e GitHub</li>
+                <li>Pacote Office</li>
+            </ul>
+            
+            <h2><i class="fas fa-users"></i> Habilidades Interpessoais</h2>
+            <ul>
+                <li>Atendimento ao cliente</li>
+                <li>Trabalho em equipe</li>
+                <li>Organização</li>
+                <li>Comunicação eficaz</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>Atualizado em junho de 2025</p>
+        </footer>
+    </div>
+</body>
+</html>
